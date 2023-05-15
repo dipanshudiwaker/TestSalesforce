@@ -57,7 +57,7 @@ def home():
 													language="en",
 													page_size=total_results)['articles']
 		return render_template("home.html", all_headlines = all_headlines)
-	return render_template("index.html")
+	return render_template("home.html")
 
 if __name__ == "__main__":
 	app.run(debug = True)
